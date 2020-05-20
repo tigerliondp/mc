@@ -58,7 +58,7 @@ html, body {
                 color: #F52D2C;
             }
 
-            .btn {
+            #server__ip {
                 text-decoration: none;
                 padding: 8px 15px;
                 border-radius: 4px;
@@ -68,7 +68,7 @@ html, body {
                 border: 1px solid #7F828B;
             }
 
-            #server__players {
+            #server__info {
                 margin-after: 0px;
                 margin-before: 0px;
                 font-size: 10px;
