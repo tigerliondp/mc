@@ -1,3 +1,6 @@
+// Original Author: Alisson Lauffer <alissonvitortc@gmail.com>
+// This code is licensed under the MIT license.
+
 var server_ip = "mc.amanoteam.com";
 
 $.ajax({url: "https://api.mcsrvstat.us/2/" + server_ip, success: function(result){
