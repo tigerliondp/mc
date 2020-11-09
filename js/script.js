@@ -3,16 +3,33 @@
 
 var server_ip = "mc.amanoteam.com";
 
-$.ajax({url: "https://api.mcsrvstat.us/2/" + server_ip, success: function(result){
+function updateDetails(result){
+    let status = document.getElementById("server__status");
+    let info = document.getElementById("server__info");
+    let ip = document.getElementById("server__ip");
     if (result.online) {
-    	$("#server__ip").text(server_ip)
-        $("#server__status").text("Server Online").addClass("on");
-        $("#server__info").html(result.players.online + " players online.");
-
+        status.innerText = "Server Online";
+        status.classList.add("on");
+        info.innerHTML = result.players.online + " players online.";
+        ip.innerText = server_ip;
     }
     else {
-        $("#server__status").text("Server Offline").addClass("off");
-        $("#server__info").text("Default IP:")
-        $("#server__ip").text("mc.eduu.ga")
+        status.innerText = "Server Offline";
+        status.classList.add("off");
+        info.innerText = "Default IP:";
+        ip.innerText = "mc.eduu.ga";
     }
-}});
+};
+
+
+const xhr = new XMLHttpRequest();
+
+xhr.onload = () => {
+    if (xhr.status == 200) {
+        const response = JSON.parse(xhr.responseText);
+        updateDetails(response);
+    }
+};
+
+xhr.open("GET", "https://api.mcsrvstat.us/2/" + server_ip);
+xhr.send();
