@@ -8,6 +8,7 @@ function updateDetails(result){
     let info = document.getElementById("server__info");
     let version = document.getElementById("server__version");
     let ip = document.getElementById("server__ip");
+    let motd = document.getElementById("server__motd");
 
     if (result.online) {
         status.innerText = "Server Online";
@@ -16,6 +17,7 @@ function updateDetails(result){
         ip.innerText = server_ip;
         
         version.innerText = result.version;
+        motd.innerText = result.motd.clean
     }
     else {
         status.innerText = "Server Offline";

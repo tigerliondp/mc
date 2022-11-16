@@ -19,6 +19,15 @@ html, body {
                 color: #8C82DB;
             }
 
+            text {
+                margin-after: 0px;
+                margin-before: 0px;
+                font-size: 10px;
+                color: #5A5D63;
+                line-height: 21px;
+                margin-bottom: 4px;
+            }
+
             p {
                 margin-after: 0px;
                 margin-before: 0px;
@@ -67,12 +76,3 @@ html, body {
                 color: #7F828B;
                 border: 1px solid #7F828B;
             }
-
-            #server__info {
-                margin-after: 0px;
-                margin-before: 0px;
-                font-size: 10px;
-                color: #5A5D63;
-                line-height: 21px;
-                margin-bottom: 4px;
-            }   
