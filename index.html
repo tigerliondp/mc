@@ -1,35 +1,42 @@
 <!doctype html>
 <html>
-    <head>
-        <title>MC Server | Edu's Website</title>
-        <link rel="shortcut icon" href="https://eduu.ga/img/favicon.png">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <meta name="HandheldFriendly" content="True">
-        <meta property="og:title" content="MC Server | Edu's Website">
-        <meta property="og:description" content="1.15 Edu's Minecraft Survival Server :D">
-        <meta property="og:url" content="https://mc.eduu.ga">
-        <meta property="og:site_name" content="Edu's Minecraft Server">
-        <meta property="og:image" content="https://eduu.ga/img/art.jpg">
-        <script src="js/script.js"></script>
-    </head>
-    <body>
-        <div class=message>
-            <div class='message__title'>
-                <span id=server__status>Please wait</span>
-            </div>
-            <p>
-                A Minecraft <b>Forge</b> server for version <span id=server__version></span> (with mods).
-            </p>
-            <div>
-                <text id=server__info></text>
-            </div>
-            <a id=server__ip></a>
-            <div>
-                <text id=server__motd></text>
-            </div>
+
+<head>
+    <title>MC Server | Edu's Website</title>
+
+    <link rel="shortcut icon" href="https://eduu.ga/img/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="HandheldFriendly" content="True">
+
+    <meta property="og:title" content="MC Server | Edu's Website">
+    <meta property="og:description" content="1.15 Edu's Minecraft Survival Server :D">
+    <meta property="og:url" content="https://mc.eduu.ga">
+    <meta property="og:site_name" content="Edu's Minecraft Server">
+    <meta property="og:image" content="https://eduu.ga/img/art.jpg">
+</head>
+
+<body>
+    <div class="message">
+        <div class="message__title">
+            <span class="server-status" id="server__status">Please wait</span>
         </div>
-    </body>
+        <p>
+            A Minecraft <b>Forge</b> server for version <span id="server__version"></span> (with mods).
+        </p>
+        <div>
+            <text id="server__info"></text>
+        </div>
+        <a id="server__ip"></a>
+        <div>
+            <text id="server__motd"></text>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
 </html>
