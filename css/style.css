@@ -31,7 +31,7 @@ body {
     justify-content: center;
 }
 
-.server-status {
+span {
     color: #8C82DB;
     font-weight: bold;
 }
